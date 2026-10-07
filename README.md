@@ -15,15 +15,8 @@
   <a href="https://github.com/CubeX-MC/Metro"><img
     src="https://img.shields.io/badge/depend-Metro-blueviolet" alt="depend: Metro"></a>
 </p>
-
 <p align="center">
-  <b>Metro 的铁路运行附属插件</b> —— 给 <a href="https://github.com/CubeX-MC/Metro">CubeX-MC/Metro</a>
-  补上它没有的 <b>手动驾驶</b>、<b>列控信号</b>、<b>调度台</b> 三层能力。
-</p>
-
-<p align="center">
-  
-  <code>MetroRail</code> 管「驾驶 / 列控 / 调度」
+  「驾驶 / 列控 / 调度」
 </p>
 
 ---
