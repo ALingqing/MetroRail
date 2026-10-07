@@ -1,0 +1,14 @@
+# 仓库内一律使用 LF 换行（跨平台一致）
+* text=auto eol=lf
+
+# 二进制文件不做任何转换
+*.jar   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+
+# Windows 脚本保留 CRLF
+*.bat   text eol=crlf
+*.cmd   text eol=crlf

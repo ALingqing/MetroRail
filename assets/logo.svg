@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="MetroRail">
+  <title>MetroRail</title>
+  <desc>MetroRail — Metro 铁路运行附属（驾驶 / 列控 / 调度）</desc>
+  <rect width="48" height="48" rx="9" fill="#0b0b0f"/>
+  <!-- 轨道：橙色的 M -->
+  <path d="M11 34 V13 L24 29 L37 13 V34" fill="none" stroke="#f59e0b"
+        stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+  <!-- 信号灯 -->
+  <rect x="20.5" y="17.5" width="7" height="7" fill="#ef4444"/>
+  <!-- 站台线 -->
+  <rect x="9" y="40" width="30" height="3" fill="#8b5cf6"/>
+</svg>

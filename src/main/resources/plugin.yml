@@ -1,0 +1,30 @@
+name: MetroRail
+version: '${project.version}'
+main: cn.aqcraft.metrorail.MetroRailPlugin
+api-version: '1.18'
+authors: [aqing]
+description: Rail operation / driving addon for Metro / Metro 铁路运行附属
+depend: [Metro]
+
+commands:
+  mr:
+    description: MetroRail main command
+    usage: /mr help
+    aliases: [metrorail, mrail]
+
+permissions:
+  metrorail.use:
+    description: Use basic MetroRail features
+    default: true
+  metrorail.drive:
+    description: Take driving authority and control notches / reverser
+    default: true
+  metrorail.train:
+    description: Create and manage consists (编组) and train properties
+    default: op
+  metrorail.switch:
+    description: Register and toggle switches (道岔)
+    default: op
+  metrorail.admin:
+    description: Admin commands such as reload, graph rebuild, web and enforce mode
+    default: op

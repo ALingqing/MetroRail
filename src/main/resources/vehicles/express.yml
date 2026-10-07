@@ -1,0 +1,7 @@
+# 快速编组：更高上限，制动稍弱
+display-name: "快速编组"
+max-speed: 0.60
+acceleration: 0.028
+brake: 0.026
+emergency-brake: 0.090
+friction: 0.008

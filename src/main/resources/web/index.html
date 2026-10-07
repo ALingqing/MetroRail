@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MetroRail 调度台</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/" title="MetroRail 调度台">
+    <!-- 标志：黑底 + 轨道 M + 信号灯 + 站台线 -->
+    <svg class="brand-logo" viewBox="0 0 48 48" role="img" aria-label="MetroRail">
+      <rect width="48" height="48" fill="#000000"/>
+      <path d="M11 34 V13 L24 29 L37 13 V34" fill="none" stroke="#f59e0b"
+            stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+      <rect x="20.5" y="17.5" width="7" height="7" fill="#ef4444"/>
+      <rect x="9" y="40" width="30" height="3" fill="#8b5cf6"/>
+    </svg>
+    <span class="brand-text">
+      <strong>MetroRail</strong>
+      <span class="tag">调度台 · DISPATCH CONSOLE</span>
+    </span>
+  </a>
+
+  <span class="chip"><span class="dot info"></span><b id="graph">-</b></span>
+
+  <span class="topbar-hint">
+    拖拽平移 · 滚轮缩放 · <code>/mr web</code> 查看本页位置
+  </span>
+
+  <div class="topbar-actions">
+    <button class="btn small" id="fit">适应</button>
+    <button class="btn small" id="zin">放大</button>
+    <button class="btn small" id="zout">缩小</button>
+    <button class="btn small ghost" id="theme">夜间</button>
+  </div>
+</header>
+
+<main>
+  <div id="track">
+    <div class="legend">
+      <div><i style="background:var(--info)"></i>空闲区段</div>
+      <div><i style="background:var(--danger)"></i>占用区段</div>
+      <div><i style="background:var(--accent)"></i>车站</div>
+    </div>
+    <div id="mapinfo">缩放 100%</div>
+  </div>
+
+  <aside id="panel">
+    <section>
+      <h2>列车<span class="n" id="n-trains">0</span></h2>
+      <table>
+        <thead><tr><th>司机</th><th>级位</th><th>速度</th><th>模式</th><th>状态</th><th>MA</th></tr></thead>
+        <tbody id="trains"></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>道岔<span class="n" id="n-switches">0</span></h2>
+      <table>
+        <thead><tr><th>编号</th><th>段</th><th></th></tr></thead>
+        <tbody id="switches"></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>应答器<span class="n" id="n-balises">0</span></h2>
+      <table>
+        <thead><tr><th>类型</th><th>名称</th></tr></thead>
+        <tbody id="balises"></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>事件日志</h2>
+      <div class="events" id="events"></div>
+    </section>
+  </aside>
+</main>
+
+<div class="toast-stack" id="toasts"></div>
+
+<script src="app.js"></script>
+</body></html>

@@ -1,0 +1,53 @@
+# MetroRail configuration
+# 铁路运行附属 —— 驾驶 / 列控层
+
+# 语言文件，对应 lang/<locale>.yml
+language: zh_CN
+
+# 默认车型（vehicles/<id>.yml 中的文件名）
+default-vehicle: default
+
+drive:
+  # 物理更新间隔（tick），1 = 每 tick
+  tick-interval: 1
+  # 司机下车时自动释放驾驶权
+  release-on-dismount: true
+  # 换向需要速度低于该值（blocks/tick）
+  reverser-max-speed: 0.05
+  # 编组最大节数
+  max-consist-size: 20
+  # 取车周边扫描半径（格）
+  scan-radius: 8.0
+  # 快捷栏驾驶：off 关闭；否则填 1-9 表示启用该格
+  hotbar-slot: "off"
+
+rail:
+  # RailGraph 建图上限节点数
+  max-graph-nodes: 20000
+  # MA 探测最大距离（格）
+  ma-lookahead: 256.0
+  # 超速预警阈值倍率（相对当前限速）
+  overspeed-warn: 1.10
+  # 完整性采样时效（tick）
+  tims-timeout-ticks: 40
+  # 相邻车厢最大间距（格），0 = 不检查
+  tims-max-spacing: 8.0
+
+signs:
+  # 自动牌子（station/property/spawn/limit/stop）
+  auto-enable: true
+
+display:
+  # 驾驶时在计分板显示运行动态
+  scoreboard: true
+  # 驾驶时显示 BossBar
+  bossbar: true
+
+web:
+  # 调度网页（SkyPCC 风格）
+  enabled: false
+  port: 25690
+  # 鉴权 token；空则只允许回环访问
+  token: ""
+  # 仅允许本机访问
+  loopback-only: true

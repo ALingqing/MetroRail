@@ -1,0 +1,8 @@
+# 车型物理参数
+# speed 单位：blocks / tick（0.4 ≈ 8 格/秒）
+display-name: "标准编组"
+max-speed: 0.40
+acceleration: 0.020
+brake: 0.030
+emergency-brake: 0.100
+friction: 0.010
